@@ -1,4 +1,4 @@
-# Hugo Lithium
+# Hugo Pithium
 
 A simple responsive blog theme for [Hugo](https://gohugo.io/) forked from https://github.com/jrutheiser/hugo-lithium-theme with modifications to make it work better with [**blogdown**](https://github.com/rstudio/blogdown).
 
