@@ -27,8 +27,7 @@
 {{ end }}
 
 {{ with .OutputFormats.Get "RSS" -}}
-{{ printf `<link rel="%s" type="%s" href="%s" title="BBBB%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="AAAA{{ $.Site.Title }}" />
+<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end -}}
 {{ partial "head_highlightjs" . }}
 <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" media="all">
