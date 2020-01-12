@@ -319,3 +319,48 @@ code {
     box-shadow: none;
   }
 }
+.description {
+  font-style: italic;
+  font-size: 80%;
+}
+.archive .description:before { content: "[";}
+.archive .description:after { content: "]";}
+.ratings {
+  font-size: 80%;
+}
+.rating-usefulness-0:after {
+  content: "🔧";
+}
+.rating-usefulness-1:after {
+  content: "🔧🔧";
+}
+.rating-usefulness-2:after {
+  content: "🔧🔧🔧";
+}
+.rating-novelty-0:after {
+  content: "💡";
+}
+.rating-novelty-1:after {
+  content: "💡💡";
+}
+.rating-novelty-2:after {
+  content: "💡💡💡";
+}
+.rating-completeness-0:after {
+  content: "🚧 🚧 🚧 ";
+}
+.rating-completeness-1:after {
+  content: "🚧 🚧 ";
+}
+.rating-completeness-2:after {
+  content: "🚧 ";
+}
+.rating-certainty-0:after {
+  content: "🤪🤪🤪";
+}
+.rating-certainty-1:after {
+  content: "🤪🤪";
+}
+.rating-certainty-2:after {
+  content: "🤪";
+}

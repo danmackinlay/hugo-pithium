@@ -17,15 +17,18 @@
     {{ range .Pages }}
     <article class="archive-item">
       <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
-      <span class="description">
-        {{ if ne .Description .Title }}
+      {{ if .Description  }}
+        <span class="description">
           {{ .Description }}
-        {{ end }}
-      </span>
-      {{ with .Params }}
-        <span
-          class="ratings usefulness-{{ .usefulness }} certainty-{{ .certainty }} novelty-{{ .novelty }} completeness-{{ .completeness }}">
         </span>
+      {{ end }}
+      {{ with .Params }}
+      <span class="ratings">
+        <span class="rating-usefulness-{{ .usefulness }}"></span>
+        <span class="rating-certainty-{{ .certainty }}"></span>
+        <span class="rating-novelty-{{ .novelty }}"></span>
+        <span class="rating-completeness-{{ .completeness }}"></span>
+      </span>
       {{ end }}
       <span class="archive-item-date">
         {{ .PublishDate.Format "2006-01-02" }}
