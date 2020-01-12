@@ -24,6 +24,9 @@
       <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
       <span class="archive-item-date">
         {{ .Date.Format "2006-01-02" }}
+        {{ if .Modified }}
+          – {{ .Modified.Format "2006-01-02" }}
+        {{ end }}
       </span>
     </article>
     {{ end }}
