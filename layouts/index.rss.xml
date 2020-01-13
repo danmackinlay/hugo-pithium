@@ -1,4 +1,5 @@
-{{- $pages := $pctx.RegularPages -}}
+{{- $pages := where .Site.RegularPages "Section" "in" (slice "post" "notebook") }}
+{{- $pages := $pages | intersection (where .Site.RegularPages "Draft" false) -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 {{- $pages = $pages | first $limit -}}
