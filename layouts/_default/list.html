@@ -16,10 +16,10 @@
     {{ $pages := .Pages }}
     {{ range .Pages }}
     <article class="archive-item">
-      <a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
+      <a href="{{ .RelPermalink }}" class="archive-item-link">{{- .Title -}}</a>
       {{ if .Description  }}
         <span class="description">
-          {{ .Description }}
+          {{- .Description -}}
         </span>
       {{ end }}
       {{ with .Params }}

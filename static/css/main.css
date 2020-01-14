@@ -323,8 +323,8 @@ code {
   font-style: italic;
   font-size: 80%;
 }
-.archive .description:before { content: "[";}
-.archive .description:after { content: "]";}
+.archive .description:before { content: "[\0000A0";}
+.archive .description:after { content: "\0000A0]";}
 .ratings {
   font-size: 80%;
 }
