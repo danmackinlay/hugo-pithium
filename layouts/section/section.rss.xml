@@ -1,6 +1,4 @@
-{{- $pctx := . -}}
-{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
-{{- $pages := $pctx.RegularPages -}}
+{{- $pages := .Site.RegularPages }}
 {{- $pages := where $pages "Section" "in" (slice "post" "notebook") }}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
