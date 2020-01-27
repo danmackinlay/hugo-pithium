@@ -21,12 +21,11 @@
       <span class="rating-completeness-{{ .completeness }}"></span>
     </span>
     {{ end }}
-
-    <div class="article-content">
-      {{ .Content }}
-    </div>
     <div class="related-content">
       {{ partial "related.html" . }}
+    </div>
+    <div class="article-content">
+      {{ .Content }}
     </div>
   </article>
 
