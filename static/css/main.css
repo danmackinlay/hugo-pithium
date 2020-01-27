@@ -148,6 +148,32 @@ code {
   background: #e5e5e5;
 }
 
+.article-content .related:before {
+  content: "See also:";
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.article-content .related h3:after {
+  content: ":";
+}
+.article-content .related ul {
+  display: inline;
+  padding: 0;
+}
+.article-content .related ul li{
+  display: inline;
+}
+.article-content .related ul li:after {
+  content: ", ";
+}
+.article-content .related ul li:last-of-type:after {
+  content: ".";
+}
+.article-content .related ul li a {
+  font-style: italic;
+}
 .highlight {
   border-radius: 3px;
   position: relative;
