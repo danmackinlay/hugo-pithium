@@ -31,10 +31,7 @@
       </span>
       {{ end }}
       <span class="archive-item-date">
-        {{ .PublishDate.Format "2006-01-02" }}
-        {{ if ne .Lastmod .PublishDate }}
-          – {{ .Lastmod.Format "2006-01-02" }}
-        {{ end }}
+        {{ partial "datespan.html" . }}
       </span>
     </article>
     {{ end }}

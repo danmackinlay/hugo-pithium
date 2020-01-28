@@ -1,0 +1,4 @@
+{{ .PublishDate.Format "2006-01-02" }}
+{{ if ne .Lastmod .PublishDate }}
+– {{ .Lastmod.Format "2006-01-02" }}
+{{ end }}
