@@ -11,6 +11,9 @@
       </span>
     {{ end }}
     {{ partial "ratings.html" . }}
+    <div class="article-tags">
+      {{ partial "tags.html" . }}
+    </div>
     <div class="article-content">
         <div class="related">
           {{ partial "related.html" . }}
