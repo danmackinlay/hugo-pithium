@@ -22,14 +22,7 @@
           {{- .Description -}}
         </span>
       {{ end }}
-      {{ with .Params }}
-      <span class="ratings">
-        <span class="rating-usefulness-{{ .usefulness }}"></span>
-        <span class="rating-certainty-{{ .certainty }}"></span>
-        <span class="rating-novelty-{{ .novelty }}"></span>
-        <span class="rating-completeness-{{ .completeness }}"></span>
-      </span>
-      {{ end }}
+      {{ partial "ratings.html" . }}
       <span class="archive-item-date">
         {{ partial "datespan.html" . }}
       </span>
