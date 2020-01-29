@@ -11,10 +11,8 @@
       </span>
     {{ end }}
     {{ partial "ratings.html" . }}
-    <div class="article-tags">
-      {{ partial "tags.html" . }}
-    </div>
     <div class="article-content">
+        {{ partial "tags.html" . }}
         <div class="related">
           {{ partial "related.html" . }}
         </div>
