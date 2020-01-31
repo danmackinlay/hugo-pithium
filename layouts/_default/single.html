@@ -13,9 +13,7 @@
     {{ partial "ratings.html" . }}
     <div class="article-content">
         {{ partial "tags.html" . }}
-        <div class="related">
-          {{ partial "related.html" . }}
-        </div>
+        {{ partial "related.html" . }}
       {{ .Content }}
     </div>
   </article>
