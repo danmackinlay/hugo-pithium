@@ -132,8 +132,13 @@ code {
 .article-content p {
   margin: 15px 0 25px;
 }
-.article-content img {
+.article-content .figure img {
     max-width: 100%;
+}
+.article-content .figure .caption {
+    text-align: right;
+    font-style: italic;
+    margin-top: 0;
 }
 .article-content a {
   text-decoration: none;
