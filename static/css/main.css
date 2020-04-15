@@ -141,6 +141,9 @@ code {
     font-style: italic;
     margin-top: 0;
 }
+.article-content .figure .caption em {
+    font-style: normal;
+}
 .article-content a {
   text-decoration: none;
   color: inherit;
