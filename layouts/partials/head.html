@@ -11,7 +11,28 @@
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{ end }}
 {{ with .Site.Params.favicon }}
-  <link href='{{ . | absURL }}' rel='icon' type='image/x-icon'/>
+  <link href='{{ . | absURL }}' rel='icon' type='image/x-icon' />
+{{ end }}
+{{ with .Site.Params.favicon32 }}
+  <link href='{{ . | absURL }}' rel='icon' sizes="32x32" type='image/x-icon' />
+{{ end }}
+{{ with .Site.Params.favicon16 }}
+  <link href='{{ . | absURL }}' rel='icon'  sizes="16x16" type='image/x-icon' />
+{{ end }}
+{{ with .Site.Params.appletouchicon }}
+  <link href='{{ . | absURL }}' rel='icon' type='image/x-icon' />
+{{ end }}
+{{ with .Site.Params.manifest }}
+  <link href='{{ . | absURL }}' rel='manifest' />
+{{ end }}
+{{ with .Site.Params.maskicon }}
+  <link href='{{ . | absURL }}' rel='mask-icon' color="#5bbad5" />
+{{ end }}
+{{ with .Site.Params.themecolor }}
+  <meta name="theme-color" content="{{ . }}">
+{{ end }}
+{{ with .Site.Params.windowscolor }}
+  <meta name="msapplication-TileColor" content="{{ . }}">
 {{ end }}
 
 {{ if .IsHome }}
