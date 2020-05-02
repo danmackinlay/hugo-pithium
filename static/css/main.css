@@ -250,11 +250,7 @@ ul.article-tags li:first-of-type:before {
   font-style: italic;
   font-size: 80%;
 }
-.archive .description:before { content: "[\0000A0";}
-.archive .description:after { content: "\0000A0]";}
-.ratings {
-  font-size: 80%;
-}
+
 .rating:after {
   vertical-align: super;
   font-size: 0.83em;
@@ -316,15 +312,17 @@ ul.article-tags li:first-of-type:before {
 }
 
 .archive-item-date {
-  color: #ccc;
+  color: #555;
   font-size: 14px;
   padding: 5px 0;
   margin-top: 5px;
-  display: block;
+  /* display: block; */
 }
+.archive .archive-item-date:before { content: "—\0000A0";}
+.archive .ratings:before { content: "—\0000A0";}
 
 .archive-item-link {
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration: none;
   font-size: 21px;
   font-weight: bold;
@@ -337,6 +335,11 @@ ul.article-tags li:first-of-type:before {
   border-bottom-color: #222;
 }
 
+.archive .description:before { content: "—\0000A0";}
+/* .archive .description:after { content: "\0000A0—";} */
+.ratings {
+  font-size: 80%;
+}
 .footer {
   padding: 25px 0;
   text-align: center;
@@ -422,9 +425,9 @@ ul.article-tags li:first-of-type:before {
   }
 
   .archive-item-date {
-    font-size: 19px;
+    font-size: 16px;
     text-align: right;
-    float: right;
+    /* float: right; */
   }
 
   .archive-item-link {
