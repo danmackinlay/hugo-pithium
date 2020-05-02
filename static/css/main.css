@@ -40,20 +40,32 @@ code {
   position: relative;
 }
 
-.header {
+.header, .footer {
   padding: 20px 0;
   position: relative;
   background: #f5f5f5;
-  border-bottom: 1px solid #eaeaea;
 }
 
-.nav {
+.header {
+  border-bottom: 1px solid #eaeaea;
+}
+.footer {
+  border-top: 1px solid #eaeaea;
+}
+
+.nav, .footerinner {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.nav {
   text-align: right;
 }
 
+.footerinner {
+  text-align: center;
+}
 .nav-logo {
   float: left;
   margin-top: -11px;

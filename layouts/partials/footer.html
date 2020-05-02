@@ -1,16 +1,15 @@
       <footer class="footer">
-        <ul class="footer-links">
-          {{ with .OutputFormats.Get "rss" -}}
+        <div class="footerinner">
+          <ul class="footer-links">
+          {{ with .OutputFormats.Get "RSS" -}}
           <li>
-            <a type="{{.MediaType.Type}}" href="{{ .Permalink }}" title="{{ $.Site.Title | safeHTML }}" target="_blank">
-            RSS feed</a>
+            <a type="{{.MediaType.Type}}" href="{{ .RelPermalink }}" title="{{ $.Site.Title | safeHTML }}" target="_blank">
+              RSS feed</a>
           </li>
           {{ end -}}
-          <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="{{ "images/hugo-logo.png" | relURL }}" alt="Img link to Hugo website" width="22" height="22"></a>
-          </li>
-        </ul>
-        {{ partial "footer_custom" . }}
+          </ul>
+          {{ partial "footer_custom" . }}
+        </div>
       </footer>
 
     </div>
