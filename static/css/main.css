@@ -30,7 +30,18 @@ h6 {
 a {
   outline: none;
 }
-
+#refs a {
+    display: inline-block;
+    max-width: 10em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 2em;
+    border-bottom: none;
+    background-color: #CBF8DF;
+    box-shadow: none;
+    font-size: 80%;
+}
 code {
   background-color: rgba(0, 0, 0, 0.02);
   font-size: 17px;
