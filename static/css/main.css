@@ -185,13 +185,21 @@ code {
   background: #CBF8DF;
 }
 
-.article-content hr {
-  width: 150px;
-  margin: 50px auto;
+.article hr {
+  width: 250px;
+  margin: 10px auto;
   height: 1px;
+  border-bottom: 1px solid #333;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   overflow: hidden;
-  border: none;
-  background: #e5e5e5;
+  /* background: #e5e5e5; */
+}
+.article .article-description {
+  margin: 0.5em 1em 0 0;
+  padding-left: 1em;
+  font-style: italic;
 }
 .related {
   display: block;
