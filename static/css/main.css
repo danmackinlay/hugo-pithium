@@ -195,7 +195,7 @@ code {
 }
 
 .article-content .related:before {
-  content: "See also:";
+  content: "Maybe related 🤷: ";
   display: inline;
   font-family: inherit;
   font-size: inherit;
@@ -212,7 +212,7 @@ code {
   display: inline;
 }
 .article-content .related ul li:after {
-  content: ", ";
+  content: " — ";
 }
 .article-content .related ul li:last-of-type:after {
   content: ".";
