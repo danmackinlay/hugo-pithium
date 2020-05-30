@@ -1,10 +1,9 @@
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
-<div class="related">
+  <span class="taxonomy">Maybe related 🤷:</span>
 <ul>
   {{ range . }}
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
   {{ end }}
 </ul>
-</div>
 {{ end }}

@@ -57,11 +57,34 @@
        url('../fonts/alegreya-v13-latin-ext_latin_greek-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* alegreya-sc-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alegreya SC Regular'), local('AlegreyaSC-Regular'),
+       url('../fonts/alegreya-sc-v11-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/alegreya-sc-v11-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* alegreya-sc-italic - latin-ext_latin */
+@font-face {
+  font-family: 'Alegreya SC';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Alegreya SC Italic'), local('AlegreyaSC-Italic'),
+       url('../fonts/alegreya-sc-v11-latin-ext_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/alegreya-sc-v11-latin-ext_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 body {
   font-family: 'Alegreya', serif;
 }
 h1, h2, h3, h4, h5, h6, .nav,
   .article-duration, .archive-item-link, .footer,
-  #refs:before, #TOC {
+  #refs:before, #TOC, .related li {
   font-family: 'Lato', sans-serif;
+}
+.article-tags {
+  font-family: 'Alegreya SC', serif;
 }

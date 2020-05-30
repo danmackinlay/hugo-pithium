@@ -171,7 +171,7 @@ code {
 .article-content .figure .caption em {
     font-style: normal;
 }
-.article-content a {
+.article a {
   text-decoration: none;
   color: inherit;
   border-bottom: 3px solid #CBF8DF;
@@ -193,32 +193,25 @@ code {
   border: none;
   background: #e5e5e5;
 }
-
-.article-content .related:before {
-  content: "Maybe related 🤷: ";
-  display: inline;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+.related {
+  display: block;
 }
-.article-content .related h3:after {
-  content: ":";
-}
-.article-content .related ul {
+.related ul {
   display: inline;
   padding: 0;
 }
-.article-content .related ul li{
+.related ul li{
   display: inline;
 }
-.article-content .related ul li:after {
+.related ul li:after {
   content: " — ";
 }
-.article-content .related ul li:last-of-type:after {
+.related ul li:last-of-type:after {
   content: ".";
 }
-.article-content .related ul li a {
+.related ul li a {
   font-style: italic;
+  font-size: 90%;
 }
 
 #refs > div > p {
@@ -244,17 +237,28 @@ code {
   white-space: nowrap;
   overflow: hidden;
 }
+.taxonomy {
+  display: inline-block;
+  padding: 0 0.5em 0 0;
+}
+.tags {
+  /* font-size: 80%; */
+  display: inline;
+  padding: 0 0.5em 0 0.5em;
+}
 ul.article-tags {
-  /* display: inline; */
+  display: inline;
+  padding: 0;
+  font-size: 80%;
+}
+ul.article-tags:before {
 }
 ul.article-tags li {
   display: inline;
   list-style-type: none;
-  font-variant-caps: small-caps;
-  font-size: 80%;
 }
 ul.article-tags li:before {
-  content: " – ";
+  content: " — ";
 }
 ul.article-tags li:first-of-type:before {
   content: ""
