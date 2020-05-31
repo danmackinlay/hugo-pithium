@@ -119,13 +119,12 @@ code {
 .nav-links a:hover {
   color: #000;
 }
-
 .content {
+  font-size: 20px;
+  line-height: 1.8;
   max-width: 700px;
   margin: 40px auto 10px;
   padding: 0 15px;
-  font-size: 16px;
-  line-height: 1.7;
   color: #333;
 }
 
@@ -199,7 +198,11 @@ code {
 .article .article-description {
   margin: 0.5em 1em 0 0;
   padding-left: 1em;
-  font-style: italic;
+  /* font-style: italic; */
+  font-family: Alegreya;
+  line-height: 1.4;
+  font-size: 24px;
+  font-weight: bold;
 }
 .related {
   display: block;
@@ -227,7 +230,7 @@ code {
   text-indent: -1em;
 }
 #TOC {
-  border: 2px solid lightgray;
+  border: 1px solid #555;
   display: inline-block;
   width: 60%;
   font-size: 80%;
@@ -443,10 +446,6 @@ ul.article-tags li:first-of-type:before {
     margin: 0 0 0 30px;
   }
 
-  .content {
-    font-size: 20px;
-    line-height: 1.8;
-  }
   .highlight {
     font-size: 16px;
     margin: 40px -20px;
