@@ -18,6 +18,10 @@
     {{ partial "related.html" . }}
     </div>
     <hr />
+    {{ if ge (len .TableOfContents) 40 }}
+    <div class="sectionTitle">Contents</div>
+    {{ .TableOfContents }}
+    {{ end }}
     <div class="article-content">
       {{ .Content }}
     </div>
