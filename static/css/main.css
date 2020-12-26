@@ -75,6 +75,10 @@ code {
   text-align: right;
 }
 
+#search {
+  text-align: left;
+  padding-top: 2em;
+}
 .footerinner {
   text-align: center;
 }
