@@ -77,13 +77,23 @@
        url('../fonts/alegreya-sc-v11-latin-ext_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* milonga-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Milonga';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/milonga-v8-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/milonga-v8-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 body {
   font-family: 'Alegreya', serif;
 }
 h1, h2, h3, h4, h5, h6, .nav,
   .article-duration, .archive-item-link, .footer,
   #refs:before, #TOC, .related li {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Milonga', sans-serif;
 }
 .article-tags {
   font-family: 'Alegreya SC', serif;
