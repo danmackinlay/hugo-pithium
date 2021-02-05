@@ -53,6 +53,7 @@ code {
   background-image:
       url("../images/dots.png");
   background-color: transparent;
+  background-size: 50%;
   mix-blend-mode: darken;
 }
 
