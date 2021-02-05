@@ -87,6 +87,16 @@
        url('../fonts/milonga-v8-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* jetbrains-mono-regular - latin-ext_latin_greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/jetbrains-mono-v3-latin-ext_latin_greek-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/jetbrains-mono-v3-latin-ext_latin_greek-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 body {
   font-family: 'Alegreya', serif;
 }
@@ -97,4 +107,7 @@ h1, h2, h3, h4, h5, h6, .nav,
 }
 .article-tags {
   font-family: 'Alegreya SC', serif;
+}
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
 }
