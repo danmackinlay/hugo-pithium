@@ -50,14 +50,17 @@ code {
 .header, .footer {
   padding: 20px 0;
   position: relative;
-  background: #f5f5f5;
+  background-image:
+      url("../images/dots.png");
+  background-color: transparent;
+  mix-blend-mode: darken;
 }
 
 .header {
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #999;
 }
 .footer {
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #999;
 }
 
 .nav, .footerinner {
@@ -241,13 +244,16 @@ code {
   text-decoration: underline;
 }
 #TOC {
-  border: 1px solid #555;
+  border-top: 5px double #555;
+  border-bottom: 4px double #555;
   display: inline-block;
   width: 60%;
   font-size: 80%;
 }
 #TOC ul {
     margin-left: 0.2em;
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
     padding-left: 0;
     width: 100%;
 }
@@ -395,11 +401,15 @@ ul.article-tags li:first-of-type:before {
   text-align: center;
 }
 
+.footer a {
+  text-decoration: none;
+  color: #888;
+}
 .footer-links {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #ccc;
+  color: #999;
   font-size: 14px;
 }
 

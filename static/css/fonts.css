@@ -1,22 +1,22 @@
 /* alegreya-sc-regular - latin-ext_latin */
-/* @font-face {
+@font-face {
   font-family: 'Alegreya SC';
   font-style: normal;
   font-weight: 400;
   src: local('Alegreya SC Regular'), local('AlegreyaSC-Regular'),
        url('../fonts/alegreya-sc-v11-latin-ext_latin-regular.woff2') format('woff2'),
        url('../fonts/alegreya-sc-v11-latin-ext_latin-regular.woff') format('woff');
-} */
+}
 
 /* alegreya-sc-italic - latin-ext_latin */
-/* @font-face {
+@font-face {
   font-family: 'Alegreya SC';
   font-style: italic;
   font-weight: 400;
   src: local('Alegreya SC Italic'), local('AlegreyaSC-Italic'),
        url('../fonts/alegreya-sc-v11-latin-ext_latin-italic.woff2') format('woff2'),
        url('../fonts/alegreya-sc-v11-latin-ext_latin-italic.woff') format('woff');
-} */
+}
 /* alegreya-regular - latin-ext_latin_greek */
 @font-face {
   font-family: 'Alegreya';
@@ -101,11 +101,11 @@ body {
   font-family: 'Alegreya', serif;
 }
 h1, h2, h3, h4, h5, h6, .nav,
-  .article-duration, .archive-item-link, .footer,
+  .article-duration, .archive-item-link,
   #refs:before, #TOC, .related li {
   font-family: 'Milonga', sans-serif;
 }
-.article-tags {
+.article-tags, .footer {
   font-family: 'Alegreya SC', serif;
 }
 code, pre {
