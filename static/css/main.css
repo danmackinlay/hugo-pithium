@@ -9,8 +9,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
+  font-variant-ligatures: common-ligatures;
   background-color: #fefefa;
+  background-image:
+  url("../images/paper-texture.webp");
   color: #050505;
 }
 
