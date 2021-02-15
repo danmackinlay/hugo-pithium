@@ -33,11 +33,10 @@ a {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-left: 2em;
     border-bottom: none;
-    background-color: #CBF8DF;
     box-shadow: none;
     font-size: 80%;
+    font-style: italic;
 }
 code {
   background-color: rgba(0, 0, 0, 0.02);
