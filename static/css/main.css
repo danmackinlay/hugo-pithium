@@ -38,6 +38,16 @@ a {
     font-size: 80%;
     font-style: italic;
 }
+#refs .csl-entry {
+  text-indent: -2em;
+  margin-left: 2em;
+  margin-bottom: 0.8em;
+}
+#refs .csl-entry > span {
+  /* font-variant-caps: small-caps; */
+  font-family: 'Alegreya SC';
+
+}
 code {
   background-color: rgba(0, 0, 0, 0.02);
   font-size: 17px;
