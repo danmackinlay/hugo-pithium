@@ -66,7 +66,6 @@ code {
       url("../images/dots.png");
   background-color: transparent;
   background-size: 64px;
-  mix-blend-mode: darken;
 }
 
 .header {
