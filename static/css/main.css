@@ -65,7 +65,8 @@ code {
   background-image: url("../images/dots.png"), url("../images/paper-texture.webp");
   background-color: #f1eee1;
   background-size: 64px;
-  background-blend-mode: darken;}
+  background-blend-mode: darken;
+}
 
 .header {
   border-bottom: 1px solid #999;
