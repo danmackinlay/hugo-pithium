@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-variant-ligatures: common-ligatures;
-  background-color: #fefefa;
+  background-color: #f1eee1;
   background-image:
   url("../images/paper-texture.webp");
   color: #050505;
@@ -62,12 +62,10 @@ code {
 .header, .footer {
   padding: 20px 0;
   position: relative;
-  background-image:
-      url("../images/dots.png");
-  background-color: transparent;
+  background-image: url("../images/dots.png"), url("../images/paper-texture.webp");
+  background-color: #f1eee1;
   background-size: 64px;
-  mix-blend-mode: darken;
-}
+  background-blend-mode: darken;}
 
 .header {
   border-bottom: 1px solid #999;
