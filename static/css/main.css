@@ -179,6 +179,11 @@ code {
     mix-blend-mode: darken;
     opacity: 0.9;
 }
+/* .article-content .figure.left {
+  float: none;
+  margin-right: 0;
+  width: 100%;
+} */
 .article-content .figure .caption {
     text-align: right;
     font-style: italic;
@@ -523,6 +528,18 @@ ul.article-tags li:first-of-type:before {
   .footer-links {
     font-size: inherit;
   }
+
+  .article-content .figure.left {
+    float: left;
+    margin-right: 1em;
+    width: 50%;
+  }
+  .article-content .figure.right {
+    float: right;
+    margin-right: 1em;
+    width: 50%;
+  }
+  
 }
 @media (min-width: 1100px) {
   #TOC {
