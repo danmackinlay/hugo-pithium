@@ -182,11 +182,6 @@ code {
     mix-blend-mode: darken;
     opacity: 0.9;
 }
-/* .article-content .figure.left {
-  float: none;
-  margin-right: 0;
-  width: 100%;
-} */
 .article-content .figure .caption {
     text-align: right;
     font-style: italic;
