@@ -175,6 +175,9 @@ code {
 .article-content embed {
   width: 100%;
 }
+.article-content .figure > p {
+    margin: 0;
+}
 .article-content .figure.illustration img {
     mix-blend-mode: darken;
     opacity: 0.9;
@@ -188,6 +191,12 @@ code {
     text-align: right;
     font-style: italic;
     margin-top: 0;
+    display: block;
+    padding-right: 1em;
+    padding-top: 0.4em;
+    border-right: 4px #333 double;
+    border-top: 1px #333 solid;
+    margin-left: 5em;
 }
 .article-content .figure .caption em {
     font-style: normal;
@@ -227,6 +236,11 @@ code {
   line-height: 1.4;
   font-size: 24px;
   font-weight: bold;
+}
+.article-content blockquote {
+  border-left: 0.6em #333 double;
+  margin-left: 1em;
+  padding-left: 0.4em;
 }
 .related {
   display: block;
