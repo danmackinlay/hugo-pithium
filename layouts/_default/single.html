@@ -24,7 +24,9 @@
   </article>
 
   {{ partial "disqus.html" .}}
+  {{ if .Params.welcommentsId  }}
   {{ partial "welcomments/comments" (dict "context" . "websiteId" .Params.welcommentsId ) }}
+  {{ end }}
 
 </main>
 
