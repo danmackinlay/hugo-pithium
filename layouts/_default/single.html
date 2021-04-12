@@ -26,6 +26,9 @@
   {{ partial "disqus.html" .}}
 
   {{ if .Site.Params.welcommentsId  }}
+  <hr/>
+  <p><strong>Warning!</strong>experimental comments system! If is does not work for you, let me know via the 
+  <a href="/contact.html">contact form</a>.</p>
   {{ partial "welcomments/comments" (dict "context" . "websiteId" .Site.Params.welcommentsid ) }}
   {{ end }}
 
