@@ -165,6 +165,15 @@ code {
 .article-content {
   position: relative;
 }
+/* .article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  border-top: 0.05em #333 dashed;
+  padding-top: 0.4em;
+} */
 .article-content p {
   margin: 15px 0 25px;
 }
