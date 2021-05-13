@@ -237,6 +237,11 @@ code {
   margin-left: 1em;
   padding-left: 0.4em;
 }
+/* song lyrics */
+.article-content .line-block {
+  font-style: italic;
+  margin-left: 2em;
+}
 .related {
   display: block;
 }
