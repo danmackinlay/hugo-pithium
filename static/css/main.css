@@ -184,6 +184,10 @@ code {
 .article-content embed {
   width: 100%;
 }
+.article-content .figure {
+  margin-top: 3.5ex;
+  margin-bottom: 2.5ex;
+}
 .article-content .figure > p {
     margin: 0;
 }
