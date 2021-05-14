@@ -148,10 +148,6 @@ code {
   line-height: 1.3;
 }
 
-.article-date {
-  color: #ccc;
-}
-
 .article-duration {
   margin-top: 12px;
   float: right;
@@ -227,9 +223,20 @@ code {
 
 .article hr {
   width: 250px;
-  margin: 10px auto;
+  margin: 18px auto 10px auto;
   height: 1px;
   border-bottom: 1px solid #333;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  overflow: hidden;
+  /* background: #e5e5e5; */
+}
+.article hr.minibreak {
+  width: 450px;
+  margin: 4px auto 1px auto;
+  height: 1px;
+  border-bottom: 1px dashed #333;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -257,6 +264,7 @@ code {
 }
 .related {
   display: block;
+  font-size: 80%;
 }
 .related ul {
   display: inline;
@@ -273,7 +281,6 @@ code {
 }
 .related ul li a {
   font-style: italic;
-  font-size: 90%;
 }
 
 #refs > div > p {
@@ -317,11 +324,14 @@ code {
   /* font-size: 80%; */
   display: inline;
   padding: 0 0.5em 0 0.5em;
+  line-height: 1;
 }
 ul.article-tags {
   display: inline;
   padding: 0;
   font-size: 80%;
+  margin: 0;
+  line-height: 1;
 }
 ul.article-tags:before {
 }
@@ -437,8 +447,15 @@ ul.article-tags li:first-of-type:before {
 
 .archive .description:before { content: "—\0000A0";}
 /* .archive .description:after { content: "\0000A0—";} */
+.article-date {
+  color: #555;
+  font-weight: bold;
+  font-size: 80%;
+  line-height: 1;
+}
 .ratings {
   font-size: 80%;
+  line-height: 1;
 }
 .footer {
   padding: 25px 0;

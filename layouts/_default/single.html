@@ -5,7 +5,8 @@
   <article class="article">
     <h1 class="article-title">{{ .Title }}</h1>
     <h2 class="article-description">{{ .Params.description }}</h1>
-    {{ if .Section  }}
+    <hr class="minibreak" />
+      {{ if .Section  }}
       <span class="article-date">
         {{ partial "datespan.html" . }}
       </span>
